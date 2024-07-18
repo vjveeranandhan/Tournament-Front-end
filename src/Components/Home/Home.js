@@ -12,7 +12,7 @@ const ComponentWithBackgroundImage = () => {
       <div className='container-1'></div>
       <div className='container-2'>
         {/* <img src={exampleImage} alt="Example" className="image" /> */}
-        <h2 className='container-2-h2'>Unleash Your Potential Enter the Arena of Champions!</h2>
+        <h2 className='container-2-h2'>Unleash Your Potential Enter the Arena of Champions!!</h2>
       </div>
       <div className='container-3'>
         {/* <img src={fixture} alt="Example" className="image1" /> */}
