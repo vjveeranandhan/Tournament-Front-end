@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css'; // Import your CSS file
 // import exampleImage from '../../Assets/component2_image.png';
 import players from '../../Assets/players.jpg';
-import fixture from '../../Assets/fixture.png';
+// import fixture from '../../Assets/fixture.png';
 
 // import LoginForm from '../Login/Login';
 

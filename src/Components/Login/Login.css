@@ -4,24 +4,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
   }
   
   .login-form {
+    text-align: center;
     background-color: transparent; /* Background color of the form */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(252, 252, 252, 0.1); /* Optional: Box shadow for a subtle effect */
-    background-color: rgba(0, 0, 0, 0.61); /* White background with 80% opacity */
+    box-shadow: 0 0 10px #fcfcfc; /* Optional: Box shadow for a subtle effect */
+    background-color: rgb(255, 255, 255); /* White background with 80% opacity */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+    box-shadow: 0 0 10px rgb(255, 255, 255); /* Optional: Box shadow for a subtle effect */
 }
   
   .login-form h2 {
-    text-align: center;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .login-form label {
@@ -31,32 +31,48 @@
   }
   
   .login-form input[type="text"],
-  .login-form input[type="password"],
-  .login-form button {
-    width: 100%;
+  .login-form input[type="password"]{
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: transparent;
-    color: white; 
+    background-color: white;
+    color: rgb(0, 0, 0); 
+    border-radius: 20px;
   }
-  
+
   .login-form button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     border: none;
     cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-radius: 20px;
   }
   
   .login-form button:hover {
-    background-color: #45a049;
+    background-color: #ffffff;
+    border-color: #2c7aee;
+    background-color: #2c7aee; /* Change to your desired hover background color */
+    color: #ffffff;
   }
   
-  .main-tag {
-	width: 100vw; /* Full width of the viewport */
-	height: 100vh; /* Full height of the viewport */
-	overflow: hidden; /* Prevents any overflow content from showing */
-	display: flex; /* Use flexbox for layout */
-	flex-direction: column; /* Arrange children vertically */
+  .login-h2-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
+
+  /* .main-tag {
+	width: 100vw; 
+	height: 100vh; 
+	overflow: hidden; 
+	display: flex; 
+	flex-direction: column;
+  } */
