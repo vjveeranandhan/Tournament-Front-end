@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from "./Components/Navbar/Navbar";
+import  {BrowserRouter, Routes, Route} from  "react-router-dom";
+import Home from './Components/Home/Home'
+import Login from './Components/Login/Login'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        {/* <Navbar/> */}
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/login" element={<Login/>} />
+      </Routes>
+    </BrowserRouter>
+	);
 }
 
 export default App;
+
+
+
+// import React, { useEffect } from "react";
+// import { useForm } from "./useForm";
+
+// function App() {
+//   const [value, handleChange] = useForm({
+//     name: "",
+//     email: "",
+//     password: "",
+//     confirm_password: ""
+//   })
+
+//   useEffect(()=>{
+//     console.log("UserEffect")
+//     return () => {
+//       console.log("Unmount")
+//     }
+//   }, [])
+
+//   console.log(value.name)
+//   console.log(value.email)
+//   console.log(value.password)
+//   console.log(value.confirm_password)
+//   return (
+//     <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '200px' }}>
+//       <input type="text" name="name" value={value.name} onChange={handleChange}/>
+//       <br></br>
+//       <input type="text" name="email" value={value.email} onChange={handleChange}/>
+//       <br></br>
+//       <input type="password" name="password" value={value.password} onChange={handleChange}/>
+//       <br></br>
+//       <input type="password" name="confirm_password" value={value.confirm_password} onChange={handleChange}/>
+//     </div>
+//   );
+// }
+
+// export default App;

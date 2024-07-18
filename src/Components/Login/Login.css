@@ -1,0 +1,62 @@
+/* LoginForm.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-form {
+    background-color: transparent; /* Background color of the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(252, 252, 252, 0.1); /* Optional: Box shadow for a subtle effect */
+    background-color: rgba(0, 0, 0, 0.61); /* White background with 80% opacity */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for a subtle effect */
+}
+  
+  .login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white; 
+  }
+  
+  .login-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .main-tag {
+	width: 100vw; /* Full width of the viewport */
+	height: 100vh; /* Full height of the viewport */
+	overflow: hidden; /* Prevents any overflow content from showing */
+	display: flex; /* Use flexbox for layout */
+	flex-direction: column; /* Arrange children vertically */
+  }
