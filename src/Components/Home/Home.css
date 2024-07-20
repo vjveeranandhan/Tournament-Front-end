@@ -135,13 +135,24 @@
   /* padding: 20px; */
   font-size: 1rem; /* Base font size */
   /* margin: 0; */
+  max-width: 100%; /* Ensures the container doesn't overflow */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Center align contents */
+}
+
+.container-4-h2-h1-1{
+  margin-left: -87px;
 }
 
 .image {
   max-width: 100%;
+  max-height: calc(100% - 40%); /* Adjust the maximum height of the image */
+  max-width: 100%; /* Ensure the image does not exceed the container width */
   height: auto; /* Maintain aspect ratio */
-  max-height: 100%; /* Adjust the maximum height of the image */
+  display: block; /* Ensures proper spacing and layout */
+  margin: 0 auto; /* Center the image horizontally */
 }
+
 
 .container-4 button {
   margin-top: 10px; /* Optional: Adds space above the button */
@@ -160,6 +171,7 @@
 }
 
 .container-4-h2{
+  margin: 0;
   color: rgb(255, 249, 249);
   font-size: 32px; 
   margin-bottom: 10px;

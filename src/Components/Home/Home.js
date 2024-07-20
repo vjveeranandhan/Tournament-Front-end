@@ -13,7 +13,9 @@ const ComponentWithBackgroundImage = () => {
         <button>Host</button>
       </div>
       <div className='container-4'>
-        <h2 className='container-4-h2'>Form your dream <h1>Team</h1> from scratch</h2>
+        <h2 className='container-4-h2'>Form your dream
+        <h1 className='container-4-h2-h1-1'>Team</h1>
+        from scratch</h2>
         <button>Build</button>
         <img src={players} alt="Example" className="image" />
       </div>
