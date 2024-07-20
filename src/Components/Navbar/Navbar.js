@@ -15,13 +15,14 @@ function Navbar() {
 
 	return (
 		<header>
+			<title>TourneyHub</title>
 			<h3>TourneyHub</h3>
 			<nav ref={navRef}>
 				<Link to="/">Home</Link>
 				<Link to="/#">Tournaments</Link>
 				<Link to="/#">About us</Link>
 				<Link to="/login">Login</Link>
-				<Link to="/#">Signup</Link>
+				<Link to="/signup">Signup</Link>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
