@@ -37,6 +37,7 @@ const Signup = () => {
             password: '',
             confirm_password: ''
           });
+          window.location.href = '/login';
     
         } catch (error) {
           console.error('Error fetching data:', error);

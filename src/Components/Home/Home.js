@@ -1,21 +1,14 @@
 import React from 'react';
-import './Home.css'; // Import your CSS file
-// import exampleImage from '../../Assets/component2_image.png';
+import './Home.css';
 import players from '../../Assets/players.jpg';
-// import fixture from '../../Assets/fixture.png';
-
-// import LoginForm from '../Login/Login';
-
 const ComponentWithBackgroundImage = () => {
   return (
     <div className="home-container">
       <div className='container-1'></div>
       <div className='container-2'>
-        {/* <img src={exampleImage} alt="Example" className="image" /> */}
         <h2 className='container-2-h2'>Unleash Your Potential Enter the Arena of Champions!!</h2>
       </div>
       <div className='container-3'>
-        {/* <img src={fixture} alt="Example" className="image1" /> */}
         <h2 className='container-3-h2'>Craft your ultimate tournament experience</h2>
         <button>Host</button>
       </div>
