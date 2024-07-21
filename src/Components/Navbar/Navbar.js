@@ -6,7 +6,7 @@ import  {Link} from  "react-router-dom";
 
 function Navbar() {
 	const navRef = useRef();
-
+	const token = localStorage.getItem('token');
 	const showNavbar = () => {
 		navRef.current.classList.toggle(
 			"responsive_nav"
@@ -19,10 +19,20 @@ function Navbar() {
 			<h3>TourneyHub</h3>
 			<nav ref={navRef}>
 				<Link to="/">Home</Link>
+				{token ? (
+				<>
 				<Link to="/#">Tournaments</Link>
+				<Link to="/#">My Team</Link>
+				<Link to="/#">Profile</Link>
+				<Link to="/logout">Logout</Link>
+				</>
+				) : (
+					<>
 				<Link to="/#">About us</Link>
 				<Link to="/login">Login</Link>
 				<Link to="/signup">Signup</Link>
+				</>
+				)}
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

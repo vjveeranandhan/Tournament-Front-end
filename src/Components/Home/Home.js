@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import players from '../../Assets/players.jpg';
 const ComponentWithBackgroundImage = () => {
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    console.log('Token', token)
+}, []);
+
   return (
     <div className="home-container">
       <div className='container-1'></div>
@@ -19,7 +25,7 @@ const ComponentWithBackgroundImage = () => {
       <div className='container-4'>
         <div className='container-4-div-1'>
           <h2 className='container-4-h2'>Form your dream
-          <h1 className='container-4-h2-h1-1'>Team</h1>
+          <p className='container-4-h2-p-1'>Team</p>
           from scratch</h2>
           <button>Build</button>
         </div>
