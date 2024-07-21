@@ -118,6 +118,12 @@
 }
 
 .container-5 {
-  height: 200px; /* Adjust height as needed */
-  background-color: #ffffff;
+  background-color: #ffffff; /* Background color */
+  width: 100%; /* Take full width of its parent */
+  max-width: 100%; /* Ensure it doesn't exceed the width of its parent */
+  height: auto; /* Automatically adjust height based on content */
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-top: 20px; /* Add margin at the top to create space */
+  margin-bottom: 20px; /* Add margin at the bottom to create space */
 }
