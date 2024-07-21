@@ -41,8 +41,6 @@
   padding: 10px;
   text-align: center;
   font-size: 1rem; /* Base font size */
-  overflow: hidden;
-  position: relative;
 }
 
 .container-1 {
@@ -89,6 +87,7 @@
 .container-4 {
   height: 500px; /* Adjust height as needed */
   background-color: #000000;
+  overflow: hidden;
 }
 
 .container-4-h2 {
