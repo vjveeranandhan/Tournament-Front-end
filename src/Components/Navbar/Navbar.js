@@ -16,14 +16,14 @@ function Navbar() {
 	return (
 		<header>
 			<title>TourneyHub</title>
-			<h3>TourneyHub</h3>
+			<h3 className="h3-header">TourneyHub</h3>
 			<nav ref={navRef}>
 				<Link to="/">Home</Link>
 				{token ? (
 				<>
 				<Link to="/#">Tournaments</Link>
 				<Link to="/#">My Team</Link>
-				<Link to="/#">Profile</Link>
+				<Link to="/profile">Profile</Link>
 				<Link to="/logout">Logout</Link>
 				</>
 				) : (

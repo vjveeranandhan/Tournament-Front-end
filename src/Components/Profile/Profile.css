@@ -1,0 +1,38 @@
+.profile-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  background-color: #f0f0f0; /* Example background color */
+  color: white; /* Example text color */
+  padding: 20px;
+}
+
+.header-container {
+  margin-bottom: 20px;
+}
+
+.profile-details-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #080808; /* Example background color */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-details {
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure details take full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-details p {
+  margin: 5px 0; /* Adjust margin for spacing */
+  font-size: 20px;
+}
+

@@ -28,6 +28,7 @@
   .box {
     width: 90%; /* Further adjust size for very small screens */
   }
+  
 }
 
 /* Specific styles for each container */
@@ -85,9 +86,16 @@
 }
 
 .container-4 {
+  padding-left: 200px;
   height: 500px; /* Adjust height as needed */
   background-color: #000000;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .container-4 {
+    padding-left: 0; /* Remove left padding on smaller screens */
+  }
 }
 
 .container-4-h2 {
