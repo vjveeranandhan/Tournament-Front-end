@@ -14,7 +14,7 @@ const Popup = ({ message, onClose }) => {
                 <button className="close-modal" onClick={toggleModal}>
                     X
                 </button>
-                <p>{message}</p>
+                <p style={{color:'black'}}>{message}</p>
             </div>
         </div>
         </>

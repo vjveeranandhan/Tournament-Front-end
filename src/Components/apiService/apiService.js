@@ -23,11 +23,21 @@ const ApiService = {
   fetch_data(endpoint, token){
     if (token){
       apiClient.defaults.headers.common['Authorization'] = `Token ${token}`;
-      console.log("Inside login Authorization", endpoint)
       return apiClient.get(endpoint);
       }
     else{
       console.log("Inside login", endpoint)
+      return apiClient.post(endpoint);
+      }
+      },
+  updateUserData(endpoint, data, token){
+    console.log("Inside updateUserData", endpoint)
+    if (token){
+      apiClient.defaults.headers.common['Authorization'] = `Token ${token}`;
+      return apiClient.put(endpoint, data);
+      }
+    else{
+      console.log("Inside updateUserData", endpoint)
       return apiClient.post(endpoint);
       }
       }

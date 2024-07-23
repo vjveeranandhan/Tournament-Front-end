@@ -36,3 +36,60 @@
   font-size: 20px;
 }
 
+.update-submit-button, .update-cancel-button{
+  margin-top: 10px;
+  width: 120px;
+  border-radius: 18px;
+  padding: 7px;
+  border: 1px solid rgb(55, 119, 214);
+  background-color: #ffffff00;
+  background-color: white;
+}
+.update-cancel-button{
+  margin-left: 39px;
+}
+.update-submit-button:hover {
+  background-color: #2c7aee;
+  color: #ffffff;
+}
+
+.update-cancel-button:hover {
+  background-color: #ec8e13;
+  color: #ffffff;
+}
+
+.profile-details button {
+  margin-top: 10px;
+  width: 140px;
+  border-radius: 18px;
+  padding: 7px;
+  border: 1px solid rgb(55, 119, 214);
+  background-color: #ffffff00;
+  background-color: white;
+}
+
+.profile-details button:hover {
+  background-color: #2c7aee;
+  color: #ffffff;
+}
+
+.update-user-component{ 
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+  width: 20%;
+  /* min-width: 200px; */
+}
+
+.update-user-component input[type="text"],
+.update-user-component input[type="password"],
+.update-user-component input[type="date"] {
+  width: 100%;
+  min-width: 100%;
+  margin: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
