@@ -23,6 +23,7 @@ function Navbar() {
 				<>
 				<Link to="/#">Tournaments</Link>
 				<Link to="/#">My Team</Link>
+				<Link to="/club">Club</Link>
 				<Link to="/profile">Profile</Link>
 				<Link to="/logout">Logout</Link>
 				</>
