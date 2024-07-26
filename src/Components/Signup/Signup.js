@@ -50,7 +50,7 @@ const Signup = () => {
       const isValid = cleaned.length === 10;
   
       return isValid;
-  };
+    };
   
 
     const handleSubmit = async (e) => {
@@ -70,7 +70,7 @@ const Signup = () => {
             if (!isValidPhoneNumber(formData.phone)) {
               setErrortext("Invalid Phone!");
               return; 
-          }
+            }
 
             if (formData['password'] !== formData['confirm_password']) {
                 setErrortext("Passwords don't match!");
@@ -90,7 +90,10 @@ const Signup = () => {
                 confirm_password: '',
                 age: ''
             });
-
+            setErrortext('Signup successful!');
+            setTimeout(() => {
+                window.location.href = '/login';
+              }, 2000);
         } catch (error) {
           if (error.response && error.response.data && error.response.data.message) {
             setErrortext(error.response.data.message);

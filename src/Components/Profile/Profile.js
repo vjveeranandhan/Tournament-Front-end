@@ -16,6 +16,19 @@ const Profile = () => {
         });
     };
 
+    const calculateAge = (dateOfBirth) => {
+        const today = new Date();
+        const birthDate = new Date(dateOfBirth);
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const monthDiff = today.getMonth() - birthDate.getMonth();
+
+        if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+
+        return age;
+    };
+
     useEffect(() => {
         console.log("Inside use effect")
         const token = localStorage.getItem('token');
@@ -40,8 +53,20 @@ const Profile = () => {
         e.preventDefault();
         console.log("Inside submit")
         try {
+            console.log(userdata.date_of_birth)
+            const age = calculateAge(userdata.date_of_birth);
+            console.log(age,"age")
+            if (age < 16) {
+                setErrortext("Your age should be greater than 16!");
+                return; 
+            }
+            const updatedUserData = {
+                ...userdata,
+                age: age
+            };
+            console.log("userdata ", userdata)
             const token = localStorage.getItem('token');
-            const response = await ApiService.updateUserData('/api/update-user/', userdata, token);
+            const response = await ApiService.updateUserData('/api/update-user/', updatedUserData, token);
             setErrortext(response.data.message);
             setTimeout(() => {
                 window.location.href = '/profile';
