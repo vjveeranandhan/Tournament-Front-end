@@ -1,0 +1,97 @@
+/* MyClub.css */
+
+/* Main container setup */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    background-color: #17152f;
+    overflow: hidden; /* Prevents overflow outside main container */
+}
+
+/* Styles for sub-containers */
+.sub-containe1, .sub-containe2 {
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(26, 30, 59);
+    border: solid 0.1px rgba(255, 255, 255, 0.212);
+}
+
+/* Flexbox layout for sub-containe1 */
+.sub-containe1 {
+    /* width: 100%; */
+    display: flex; /* Enables flexbox layout */
+    flex-direction: row; /* Stacks child elements vertically */
+   /* Centers child elements horizontally */
+    overflow-y: auto; /* Adds scroll if content exceeds container height */
+    height: 120px /* Adjust height with margin accounted */
+}
+
+/* Flexbox layout for individual menu items */
+.menu {
+    display: flex; /* Enables flexbox layout for menu items */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically within its container */
+    width: 100%; /* Full width of parent container */
+    background-color: rgb(20, 23, 44); /* Background color for visibility */
+    border-radius: 5px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 20px;
+    margin: 5px;
+    border: 0.6px solid rgba(255, 255, 255, 0.199);
+}
+
+/* Flexbox layout for sub-containe2 */
+.sub-containe2 {
+    height: 100%;
+    width: 100%; /* Adjust width as needed */
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-start; /* Aligns content to the top */
+    justify-content: center; /* Centers content horizontally */
+}
+
+/* Centering h2 in sub-containe1 */
+.sub-containe1 h2 {
+    text-align: center; /* Centers text horizontally */
+    margin-bottom: 20px; /* Adds space below h2 */
+}
+
+/* Centering h4 tags in menu */
+.menu h4 { /* Initial background color */
+    color: white; /* Text color */
+    margin: 0;
+    padding: 10px; /* Space around the text */
+    border-radius: 7px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.menu:hover {
+    background-color: rgba(255, 255, 255, 0.856); /* Background color on hover */
+}
+
+.menu:hover h4 {
+    color: black; /* Text color on hover */
+}
+
+.container-club-header{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(253, 253, 253);
+    /* height: 100px; */
+}
+
+.container-club-header h2{
+    font-size: 40px;
+}
+
+.container-club-header p{
+    font-size: 20px;
+}

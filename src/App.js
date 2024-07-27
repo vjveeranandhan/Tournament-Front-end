@@ -6,7 +6,7 @@ import Login from './Components/Login/Login'
 import Signup from './Components/Signup/Signup';
 import Logout from './Components/Logout/Logout';
 import Profile from './Components/Profile/Profile';
-import Club from './Components/Club/Club';
+import CreateClub from './Components/Club/CreateClub';
 
 function App() {
 	return (
@@ -19,7 +19,7 @@ function App() {
         <Route path="/signup" element={<Signup/>} />
         <Route path="/logout" element={<Logout/>} />
         <Route path="/profile" element={<Profile/>} />
-        <Route path="/club" element={<Club/>} />
+        <Route path="/club" element={<CreateClub/>} />
       </Routes>
     </BrowserRouter>
 	);
