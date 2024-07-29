@@ -7,6 +7,8 @@ import Signup from './Components/Signup/Signup';
 import Logout from './Components/Logout/Logout';
 import Profile from './Components/Profile/Profile';
 import CreateClub from './Components/Club/CreateClub';
+import MyTournaments from './Components/MyTournaments/MyTournaments';
+import TournamentInvitations from './Components/TournamentInvitations/TournamentInvitations';
 
 function App() {
 	return (
@@ -20,6 +22,8 @@ function App() {
         <Route path="/logout" element={<Logout/>} />
         <Route path="/profile" element={<Profile/>} />
         <Route path="/club" element={<CreateClub/>} />
+        <Route path="/my-tournaments" element={<MyTournaments/>} />
+        <Route path="/tournament-invitations" element={<TournamentInvitations/>} />
       </Routes>
     </BrowserRouter>
 	);
