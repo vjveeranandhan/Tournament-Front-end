@@ -28,7 +28,6 @@ const MyClub = ({ club }) => {
             {menuSelection === 'players' && <ClubPlayers />}
             {menuSelection === 'board-members' && <ClubManagement />}     
             {menuSelection === 'my-tournaments' && <MyTournaments />}     
-            {menuSelection === 'my-tournaments' && <MyTournaments />}    
             {menuSelection === 'tournament-invitations' && <TournamentInvitations />}      
             </div>
         </div>
