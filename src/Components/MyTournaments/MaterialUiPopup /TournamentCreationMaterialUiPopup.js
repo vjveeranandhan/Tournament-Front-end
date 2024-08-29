@@ -79,7 +79,7 @@ const TournamentCreationMaterialUiPopup = ({ open, onClose }) => {
     }
   };
 
-  const handlePopupClose = () => {
+  const handlePopupClose = () => {InputAdornment
     setErrortext('');
   };
 
